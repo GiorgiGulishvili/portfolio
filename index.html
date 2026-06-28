@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgi Gulishvili | Freelance Video Editor & Ad Creator</title>
+    
+    <!-- ENCODED GG STUDIO ICON (Favicon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000000'/%3E%3Ctext x='16' y='21' font-family='sans-serif' font-weight='900' font-size='14' fill='%23ff3b00' text-anchor='middle' letter-spacing='-1'%3EGG%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts for Editorial Aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Trykker&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['Trykker', 'serif'],
+                    },
+                    colors: {
+                        studio: {
+                            black: '#000000',
+                            white: '#ffffff',
+                            accent: '#ff3b00', 
+                            blueGlow: '#1e40af', 
+                            gray: '#050505'
+                        }
+                    },
+                    animation: {
+                        'float-orange': 'floatOrange 10s ease-in-out infinite',
+                        'float-blue': 'floatBlue 12s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        floatOrange: {
+                            '0%, 100%': { transform: 'translate(-50%, -20%) scale(1)' },
+                            '33%': { transform: 'translate(-15%, -35%) scale(1.2)' },
+                            '66%': { transform: 'translate(-55%, 5%) scale(0.85)' },
+                        },
+                        floatBlue: {
+                            '0%, 100%': { transform: 'translate(-30%, -10%) scale(1)' },
+                            '33%': { transform: 'translate(-65%, -25%) scale(0.9)' },
+                            '66%': { transform: 'translate(-35%, -45%) scale(1.15)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* CSS class for smooth, automatic fading trail points */
+        .trail-point {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 50;
+            transform: translate(-50%, -50%);
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-studio-black text-slate-200 font-sans antialiased selection:bg-studio-accent selection:text-white relative overflow-x-hidden min-h-screen">
+
+    <!-- FLUID, ACCELERATED MOVING BACKGROUND OBJECTS -->
+    <div class="absolute top-[10vh] left-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-studio-accent/20 rounded-full blur-[100px] sm:blur-[140px] pointer-events-none animate-float-orange z-0"></div>
+    <div class="absolute top-[20vh] left-1/3 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-studio-blueGlow/25 rounded-full blur-[110px] sm:blur-[150px] pointer-events-none animate-float-blue z-0"></div>
+
+    <!-- Main Content Structural Layer -->
+    <div class="relative z-10">
+
+        <!-- Header Navigation -->
+        <header class="max-w-5xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-white/5">
+            <div class="flex items-center gap-2">
+                <span class="text-studio-accent text-2xl font-bold">✦</span>
+                <div class="text-lg font-extrabold tracking-tighter text-studio-white uppercase">GIORGI GULISHVILI</div>
+            </div>
+            <a href="#contact" class="text-xs tracking-widest uppercase font-semibold text-slate-400 hover:text-studio-accent transition-colors duration-200">
+                (Contact)
+            </a>
+        </header>
+
+        <!-- Hero / Main Freelancer Intro -->
+        <section class="max-w-5xl mx-auto px-6 py-24 md:py-32 text-center flex flex-col items-center">
+            <div class="max-w-4xl flex flex-col items-center">
+                <span class="text-studio-accent/90 font-bold text-xs uppercase tracking-widest block mb-4 opacity-90">
+                    (01) Discover my work
+                </span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter text-studio-white leading-tight max-w-3xl">
+                    High-retention editing <br>built to scale your campaigns.
+                </h1>
+                <p class="mt-8 text-xl md:text-2xl text-slate-300 font-serif italic max-w-2xl leading-relaxed">
+                    I help my clients to realize the full potential of their digital spaces and paid traffic campaigns.
+                </p>
+                
+                <div class="mt-12">
+                    <a href="https://drive.google.com/drive/folders/19IqrgIGy4I7qNSykRsdwCZyWlsf2PgFh?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-block bg-studio-white hover:bg-studio-accent text-studio-black hover:text-studio-white font-bold px-8 py-4 rounded-full transition-all duration-300 uppercase tracking-wider text-xs shadow-2xl shadow-studio-accent/20">
+                        View Portfolio & CV (Google Drive)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creativity Block: Advanced Glassmorphic Blueprint Element -->
+        <section class="border-t border-white/5 bg-white/[0.01] backdrop-blur-3xl py-24 text-center">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col items-center">
+                <span class="text-studio-accent/90 font-bold text-xs uppercase tracking-widest block mb-4 opacity-90">
+                    (02) Creative Engineering
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-studio-white mb-12">
+                    Anatomy of a High-Retention Video Asset
+                </h2>
+
+                <!-- Heavily Saturated Frosted Glass Card Layer -->
+                <div class="w-full bg-white/[0.02] backdrop-blur-2xl backdrop-saturate-150 border border-white/[0.08] shadow-[0_0_50px_rgba(0,0,0,0.8)] rounded-2xl p-6 md:p-8 space-y-6 text-center">
+                    <div class="flex flex-col sm:flex-row items-center justify-between border-b border-white/5 pb-4 text-xs tracking-wider text-slate-500 gap-2">
+                        <span class="opacity-70">TIMELINE STRUCTURAL ANALYSIS</span>
+                        <span class="text-studio-accent font-bold tracking-wide">ENGAGEMENT TARGET: +70% STW</span>
+                    </div>
+                    
+                    <div class="grid grid-cols-12 gap-4 text-center text-xs font-bold font-mono">
+                        <!-- Hook Segment -->
+                        <div class="col-span-12 md:col-span-3 bg-studio-accent/[0.08] border border-studio-accent/40 text-studio-accent p-5 rounded-xl flex flex-col items-center justify-center backdrop-blur-md shadow-lg shadow-studio-accent/[0.02]">
+                            <p class="mb-1 text-studio-accent">0:00 - 0:03</p>
+                            <p class="font-sans uppercase tracking-wider text-[10px]">The Visual Hook</p>
+                            <span class="text-[9px] block text-slate-300 normal-case font-sans mt-2 max-w-xs font-normal">Disruptive pacing, typography pattern shifts, dynamic framing adjustments.</span>
+                        </div>
+                        <!-- Core Content Segment -->
+                        <div class="col-span-12 md:col-span-6 bg-white/[0.03] border border-white/10 text-studio-white p-5 rounded-xl flex flex-col items-center justify-center backdrop-blur-md">
+                            <p class="mb-1 text-slate-500">0:03 - 0:25</p>
+                            <p class="font-sans uppercase tracking-wider text-[10px]">Core Retention Mechanics</p>
+                            <span class="text-[9px] block text-slate-400 normal-case font-sans mt-2 max-w-md font-normal opacity-90">Pacing modifications, audio micro-stings, strategic clip sequencing based on drop-off charts.</span>
+                        </div>
+                        <!-- Direct CTA Segment -->
+                        <div class="col-span-12 md:col-span-3 bg-white/[0.01] border border-white/5 text-slate-400 p-5 rounded-xl flex flex-col items-center justify-center backdrop-blur-md">
+                            <p class="mb-1 text-slate-600">0:25 - 0:30</p>
+                            <p class="font-sans uppercase tracking-wider text-[10px] text-slate-500">Conversion Drive</p>
+                            <span class="text-[9px] block text-slate-500 normal-case font-sans mt-2 max-w-xs font-normal opacity-70">High-visibility call-to-action transition frame optimized for platform response rates.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Hire Me? Matrix Section -->
+        <section class="border-t border-white/5 py-24 text-center">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col items-center">
+                <span class="text-studio-accent/90 font-bold text-xs uppercase tracking-widest block mb-4 opacity-90">
+                    (03) The Approach
+                </span>
+                <h3 class="text-2xl md:text-3xl font-extrabold text-studio-white tracking-tight mb-6">Why execute with Giorgi?</h3>
+                
+                <div class="max-w-3xl space-y-12 flex flex-col items-center">
+                    <p class="text-xl md:text-2xl text-slate-300 font-serif italic leading-relaxed max-w-2xl">
+                        "Every single frameset matters. Editing performance ads requires a strict mathematical understanding of platform algorithms balanced with visual execution."
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-12 pt-8 border-t border-white/5 text-center w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="font-bold text-studio-white mb-2 text-base">Retention Stabilization</h4>
+                            <p class="text-sm text-slate-400 leading-relaxed max-w-xs">Continuous analysis of asset analytics across high-volume pipelines guarantees files are encoded to capture immediate retention spikes.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="font-bold text-studio-white mb-2 text-base">Native Infrastructure</h4>
+                            <p class="text-slate-400 leading-relaxed max-w-xs">Two consecutive years of active e-commerce campaign deployment ensure exact formatting delivery across all key mobile ad networks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Footer -->
+        <footer id="contact" class="border-t border-white/5 bg-studio-gray py-24 text-center">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col items-center">
+                <span class="text-studio-accent/90 font-bold text-xs uppercase tracking-widest block mb-2 opacity-90">
+                    (04) Direct Inquiries
+                </span>
+                <h2 class="text-4xl font-extrabold text-studio-white tracking-tighter mb-12">Start the collaboration.</h2>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-12 w-full max-w-xl">
+                    <div class="flex flex-col items-center">
+                        <p class="text-xs uppercase tracking-widest text-slate-500 mb-2 opacity-80">Email Address</p>
+                        <a href="mailto:Gulishvili.g@gmail.com" class="text-lg font-bold text-studio-white hover:text-studio-accent transition-colors">
+                            Gulishvili.g@gmail.com
+                        </a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-xs uppercase tracking-widest text-slate-500 mb-2 opacity-80">Professional Network</p>
+                        <a href="https://www.linkedin.com/in/giorgi-gulishvili-719760359/" target="_blank" rel="noopener noreferrer" class="text-lg font-bold text-studio-white hover:text-studio-accent transition-colors">
+                            LinkedIn Profile ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-20 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-600 gap-4 w-full">
+                    <p>© 2026 Giorgi Gulishvili. Content asset directories managed securely via Google Cloud Infrastructure.</p>
+                    <div class="flex items-center gap-2">
+                        <span class="text-studio-accent">✦</span>
+                        <span class="opacity-80">Direct Response Performance Portfolio</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- HIGH-PERFORMANCE MOUSE TRAIL PIPELINE SCRIPT -->
+    <script>
+        // Only trigger the trail animation on non-touch desktop viewports
+        if (window.matchMedia('(min-width: 768px)').matches) {
+            window.addEventListener('mousemove', (e) => {
+                createTrailNode(e.clientX, e.clientY);
+            });
+        }
+
+        function createTrailNode(x, y) {
+            const node = document.createElement('div');
+            node.className = 'trail-point bg-studio-accent/30 blur-md';
+            
+            // Set initial resting dimensions
+            node.style.width = '24px';
+            node.style.height = '24px';
+            node.style.left = `${x}px`;
+            node.style.top = `${y}px`;
+            
+            document.body.appendChild(node);
+            
+            // Use a tiny timeout to allow the browser to paint before transitioning
+            setTimeout(() => {
+                node.style.transform = 'translate(-50%, -50%) scale(0.1)';
+                node.style.opacity = '0';
+            }, 10);
+            
+            // Clean up the DOM node after the 600ms CSS transition finishes
+            setTimeout(() => {
+                node.remove();
+            }, 600);
+        }
+    </script>
+
+</body>
+</html>
